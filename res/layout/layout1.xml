@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">	
+	<Spinner android:id="@+id/SPNER_COM" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<Spinner android:id="@+id/SPNER_BR" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<Button 
+      	android:id="@+id/BT_Config"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"	 
+		android:text="@string/Config" />
+ </LinearLayout>  
+	<!-- **********reset******** -->
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+  	<Button 
+    	android:id="@+id/BT_Reset"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"	 
+		android:text="@string/Reset"/>
+  
+    	<RadioGroup 
+	        android:id="@+id/RDG_Rst" 
+	        android:contentDescription="" 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical">
+        
+    	  	<RadioButton 
+    	  	    android:layout_width="wrap_content" 
+    	  	    android:layout_height="wrap_content" 
+    	  	    android:id="@+id/RD_Rst1" 
+    	  	    android:text="@string/SaveKey" 
+    	  	    android:textSize="20sp"
+    	  	    android:checked="true"/>
+    	  	   
+ 			<RadioButton 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/RD_Rst2" 
+			android:textSize="20sp"
+			android:text="@string/ClearKey"/> 
+	    </RadioGroup>
+</LinearLayout>
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:focusable="true" 
+	    android:focusableInTouchMode="true">		
+		<!-- **********respone test******** --> 	
+       	<Button 
+      		android:id="@+id/BT_ECHO"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:text="@string/Respone" />
+ 		<TextView 
+ 		    android:id="@+id/TV_1"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:text="@string/SendChar" />
+   		<EditText
+  		    android:id="@+id/ED_ESend"
+ 	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:text="A" 
+			android:maxLength="1"
+			android:inputType="textCapCharacters"/>
+		<TextView 
+		    android:id="@+id/TV_2"
+      		android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:text="@string/ReceiveChar"/> 
+		<EditText
+			android:id="@+id/ED_ERec"
+       		android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:hint="" 
+			android:inputType="none"/> 	 
+</LinearLayout>   
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">         	
+       	<!-- **********GetVersion******** -->
+		<Button 
+	      	android:id="@+id/BT_GetVer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:text="@string/GetVersion" />
+  	   <TextView 
+  	     	android:id="@+id/TV_FWVer"
+  	        android:layout_width="200dp"
+			android:layout_height="30dp"
+			android:textSize="20sp"
+			android:background="#00FF00"
+			android:gravity="center"/>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"> 
+         	<!-- **********GetSN******** -->
+
+			<Button 
+		      	android:id="@+id/BT_GetSN"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"	 
+				android:text="@string/GetSN" />
+    	   <TextView 
+    	    	android:id="@+id/TV_SN"
+    	       	android:layout_width="200dp"
+				android:layout_height="30dp"
+				android:textSize="20sp"
+				android:background="#00FF00"
+				android:gravity="center"/>
+</LinearLayout>
+
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:minHeight="10dp"
+	    android:orientation="horizontal"
+	   	android:gravity="bottom"> 	    
+	    <TextView
+	        android:id="@+id/TV_Report"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="12pt"
+	        android:background="#0000FF"
+	        android:textColor="#FF0000"
+	        android:text="" />	 
+	</LinearLayout>
+</LinearLayout>

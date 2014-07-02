@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.epp_test"
+    android:versionCode="1"
+    android:versionName="V1.01" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+    <!-- 获取权限 1访问网络 2网络状态 3读写SD卡 4USB附件 -->
+    <uses-permission android:name="android.permission.INTERNET" /> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.usb.accessory" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_kmylog"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.epp_test.MainActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name="mode1.Mode1Activity"
+            android:label="@string/title_activity_mode1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="mode2.Mode2Activity"
+            android:label="@string/title_activity_mode2"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>

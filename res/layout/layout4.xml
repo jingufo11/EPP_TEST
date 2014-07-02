@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:focusable="true" 
+	android:focusableInTouchMode="true">
+    
+	<LinearLayout
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="center_vertical">
+		<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/MKIndex"
+	    	android:textSize="@dimen/TextSize"/>  
+      	<Spinner android:id="@+id/SPNER_MKIndex" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/TextSize"/>   
+		<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/WKIndex"
+	    	android:textSize="@dimen/TextSize"/>		
+      	<Spinner android:id="@+id/SPNER_WKIndex" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/TextSize"/>
+
+	</LinearLayout>
+	
+   	<RadioGroup 
+        android:id="@+id/RDG_EncAlg" 
+        android:contentDescription="" 
+        android:orientation="horizontal"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">	        
+  	  		<RadioButton 
+   	  	    android:layout_width="wrap_content" 
+   	  	    android:layout_height="wrap_content" 
+   	  	    android:id="@+id/RD_DES" 
+   	  	    android:textSize="@dimen/TextSize"
+   	  	    android:text="@string/DES"/>
+		<RadioButton 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/RD_3DES" 	 
+    	  	    android:checked="true"
+    	  	    android:textSize="@dimen/TextSize"
+				android:text="@string/TDES"/> 
+	</RadioGroup> 
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:orientation="vertical"> 
+	   	<TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="12sp"
+	    	android:background="#000000"/>
+	   	<TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="12sp"
+	    	android:background="#FFFFFF"/>
+	</LinearLayout>
+	<LinearLayout    
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/TextSize"
+	    	android:text="@string/PINLen"/>
+    	<Spinner android:id="@+id/SPNER_PINLen" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/TextSize"/>  
+		<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/CardNo"
+	    	android:textSize="@dimen/TextSize"/>
+    	<EditText android:id="@+id/ED_CardNO"
+    	    android:hint=""
+    	    android:text="@string/CardNoINIT"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:background="#33FF00"
+			android:textSize="@dimen/TextSize"/> 	    
+	</LinearLayout>
+	<LinearLayout    
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >	
+    	<Button
+    	    android:id="@+id/BT_PinStart"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/PINStart"/>
+ 		<CheckBox
+		    android:id="@+id/CB_AutoEnd"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/AutoEnd"/>
+     </LinearLayout>
+	<LinearLayout    
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/TextSize"
+	    	android:text="@string/Input"/>
+    	<TextView
+    	    android:id="@+id/TV_PIN"
+    	    android:background="#33FF00"
+    	    android:gravity="center"
+    	    android:textSize="@dimen/TextSize"
+	    	android:layout_width="200dp"
+	    	android:layout_height="30dp"/>
+    </LinearLayout>
+    <LinearLayout    
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="@dimen/TextSize"
+    	android:orientation="horizontal" >
+    	<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/TextSize"
+	    	android:text="@string/PinBlock"/>
+    	<TextView
+    	    android:id="@+id/TV_PINBlock"
+	    	android:background="#33FF00"
+	    	android:gravity="center"
+	    	android:textSize="@dimen/TextSize"
+	    	android:layout_width="200dp"
+	    	android:layout_height="30dp"/>
+    </LinearLayout>
+    
+       	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:minHeight="10dp"
+	    android:orientation="horizontal"
+	    android:gravity="bottom">
+   		<TextView
+		    android:id="@+id/TV_Report4"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="12pt"
+		    android:background="#0000FF"
+		    android:textColor="#FF0000"
+		    android:text="" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">设置</string>
+    <string name="action_about">说明</string>
+    <string name="action_switch">切换</string>
+    <string name="Write">写</string>
+    <string name="Config">配置</string>
+    <string name="Test">测试</string>
+    <string name="KMYTEST">KMY测试工具	V1.00</string>
+    <string name="Reset">复位</string>
+    <string name="Respone">回送</string>
+    <string name="PressKey">按键</string>
+    <string name="LOADMK">下载主密钥</string>
+    <string name="MAIN_ACTIVITY">MainActivity</string>
+    <string name="PAGE1">基本设置</string>
+    <string name="PAGE2">明文测试</string>
+    <string name="PAGE3">密文测试</string>
+    <string name="SaveKey">保留密钥</string>
+    <string name="ClearKey">清除密钥</string>
+    <string name="SendChar">发送字符</string>
+    <string name="ReceiveChar">接收字符</string>
+    <string name="GetVersion">取固件版本</string>
+    <string name="GetSN">取串号</string>
+    <string name="Start">开始</string>
+    <string name="Stop">停止</string>
+    <string name="Clear">清除</string>
+    <string name="LoadMK">下载主密钥</string>
+    <string name="LoadWK">下载工作密钥</string>
+    <string name="MastetKeyPlaintext">主密钥明文</string>
+    <string name="WorkKeyCiphertext">工作密钥密文</string>
+    <string name="MKINIT">11223344556677889900AABBCCDDEEFF</string>
+    <string name="WKINIT">11223344556677889900AABBCCDDEEFF</string>
+    <string name="MKLen">00</string>
+    <string name="WKLen">00</string>
+    <string name="KCV">校验码</string>
+    <string name="KCVINIT">校验值</string>
+    <string name="MKIndex">主密钥号</string>
+    <string name="WKIndex">工作密钥号</string>
+    <string name="DES">DES</string>
+    <string name="TDES">3DES</string>
+    <string name="PINLen">PIN长度</string>
+    <string name="CardNo">卡号</string>
+    <string name="CardNoINIT">1234567890123456</string>
+    <string name="Input">输入</string>
+    <string name="PINStart">启动PIN</string>
+    <string name="AutoEnd">自动结束</string>
+    <string name="PinBlock">PinBlock</string>
+    <string name="Enc">加密</string>
+    <string name="Dec">解密</string>
+    <string name="MAC">MAC</string>
+    <string name="EncInit">0000000000000000</string>
+    <string name="MACInit">1234567890123456</string>
+    <string name="EncData">加密或解密数据</string>
+    <string name="EncResult">加密或解密结果</string>
+    <string name="MacData">mac数据</string>
+    <string name="MacResult">mac结果</string>
+    <string name="SecondName">KMY350X-Mode2</string>
+    <string name="FirstName">KMY350X-Mode1</string>
+    <string name="Mode1">USB-TO-UART</string>
+    <string name="Mode2">Really-UART</string>
+    <string name="plsChoose">请选择串口模式</string>
+    <string name="title_activity_mode1">USB-TO-UART 模式</string>
+    <string name="title_activity_mode2">Really UART 模式</string>
+    <string name="appVer">凯明杨测试工具V1.01</string>
+    <string name="Enter">确定</string>
+    <string name="Cancel">取消</string>
+    <string name="about">凯明杨加密键盘安卓驱动说明</string>
+	<string name="aboutContext">
+	\t版本要求: Android3.2及以上版本.\r\n
+	\r\n
+	\t该驱动包含2种应用模式:\r\n
+	\t第一种是Android设备自带串口,通过linux系统间接操作串口(Really-UART);\r\n
+	\t第二种是Android设备没有串口,通过FTDI USB-UART芯片仿真串口,
+		目前只支持Android设备作为USB从设备方式驱动(USB-TO-UART).\r\n
+	\r\n
+	\t请在使用时选择正确的应用模式.    
+	</string>
+	<string name="language">语言</string> 
+		<string-array name="Language">
+	    <item>默认</item>
+	    <item>English</item>
+        <item>中文(简体)</item>
+	</string-array> 
+	
+	<string name="update">更新</string>
+	<string name="checkforupdate">检查更新</string>
+	<string name="checkingNow">正在检查</string>
+	<string name="wificlose">Wi-Fi未开启或网络状态差</string>
+	<string name="wifiopen">请开启Wi-Fi或检查网络</string>
+	<string name="currentversion">当前版本</string>
+	<string name="latestversion">最新版本</string>
+	<string name="noneedupdate">已经是最新版本，无需更新</string>
+	<string name="getvercodeerr">获取版本信息错误</string>
+	<string name="softupdate">软件更新</string>
+	<string name="findnewversion">发现新版本</string>
+	<string name="isupdate">是否更新？</string>
+	<string name="Downloading">正在下载</string>
+	<string name="pleasewait">请稍后..</string>
+	<string name="dontupdate">暂不更新</string>
+	<string name="hasnewversion">有新的版本可以更新。</string>
+</resources>
+
+
+
+
+
+
+
+
+
+

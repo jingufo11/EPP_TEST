@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EPP_TEST</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About..</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_switch">switch</string>
+    <string name="Write">Write</string>
+    <string name="Config">Config</string>
+    <string name="Test">Test</string>
+    <string name="KMYTEST">KMY Test Tool v1.00</string>
+    <string name="Reset">Reset</string>
+    <string name="Respone">Respone</string>
+    <string name="PressKey">PressKey</string>
+    <string name="LOADMK">LoadMK</string>
+    <string name="MAIN_ACTIVITY">MainActivity</string>
+    <string name="PAGE1">Base Setting</string>
+    <string name="PAGE2">Plaintext Test</string>
+    <string name="PAGE3">Ciphertext Test</string>
+    <string name="SaveKey">SaveKey</string>
+    <string name="ClearKey">ClearKey</string>
+    <string name="SendChar">Send Char</string>
+    <string name="ReceiveChar">Receive Char</string>
+    <string name="GetVersion">Get FWVersion</string>
+    <string name="GetSN">Get SN</string>
+    <string name="Start">Start</string>
+    <string name="Clear">Clear</string>
+    <string name="LoadMK">LoadMK</string>
+    <string name="LoadWK">LoadWK</string>
+    <string name="MastetKeyPlaintext">MastetKey Plaintext</string>
+    <string name="WorkKeyCiphertext">WorkKey Ciphertext</string>
+    <string name="MKINIT">11223344556677889900AABBCCDDEEFF</string>
+    <string name="WKINIT">11223344556677889900AABBCCDDEEFF</string>
+    <string name="MKLen">00</string>
+    <string name="WKLen">00</string>
+    <string name="KCV">KCV</string>
+    <string name="KCVINIT">KCV Value</string>
+    <string name="MKIndex">MK Index</string>
+    <string name="WKIndex">WK Index</string>
+    <string name="DES">DES</string>
+    <string name="TDES">3DES</string>
+    <string name="PINLen">Len</string>
+    <string name="CardNo">CardNo.</string>
+    <string name="CardNoINIT">1234567890123456</string>
+    <string name="Input">Input</string>
+    <string name="PINStart">PINStart</string>
+    <string name="AutoEnd">AtuoEnd</string>
+    <string name="PinBlock">PinBlock</string>
+    <string name="Enc">Enc</string>
+    <string name="Dec">Dec</string>
+    <string name="MAC">MAC</string>
+    <string name="EncInit">0000000000000000</string>
+    <string name="MACInit">1234567890123456</string>
+    <string name="EncData">encrypt or decrypt data</string>
+    <string name="EncResult">encrypt or decrypt result</string>
+    <string name="MacData">mac data</string>
+    <string name="MacResult">mac result</string>
+    <string name="SecondName">KMY350X-Mode2</string>
+    <string name="FirstName">KMY350X-Mode1</string>
+    <string name="Mode1">USB-TO-UART</string>
+    <string name="Mode2">Really-UART</string>
+    <string name="plsChoose">Please choose UART mode</string>
+    <string name="title_activity_mode1">USB-TO-UART Mode</string>
+    <string name="title_activity_mode2">Really UART Mode</string>
+    <string name="appVer">KMY_TEST_V1.01</string>
+    <string name="Enter">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="about">About KMY EPP android driver</string>
+    <string name="aboutContext">	\t	Version request: Android3.2 and above.\r\n
+	\r\n
+	\t	The driver include two uart mode:\r\n
+	\t	One,the adroid device has a really uart port,and control uart in linux OS(Really-UART);\r\n
+	\t	Another,the android device has no uart,need a mcu of FTDI USB-UART.
+		Only support usb accessory mode now(USB-TO-UART).\r\n
+	\r\n
+	\t	Please choose the correct mode first.   </string>
+    <string name="language">Language</string>
+
+    <string-array name="Language">
+        <item>Default</item>
+        <item>English</item>
+        <item>中文(简体)</item>
+    </string-array>
+    
+    <string name="update">Update</string>
+	<string name="checkforupdate">Check for update</string>
+	<string name="checkingNow">Checking now</string>
+	<string name="wificlose">Wi-Fi is close or different network</string>
+	<string name="wifiopen">Please open Wi-Fi or check network</string>
+	<string name="currentversion">Current version</string>
+	<string name="latestversion">Latest version</string>
+	<string name="noneedupdate">The latest version already,no update</string>
+	<string name="getvercodeerr">Get version wrong</string>
+	<string name="softupdate">Soft update</string>
+	<string name="findnewversion">Find a new version</string>
+	<string name="isupdate">Do need update?</string>
+	<string name="Downloading">Downloading</string>
+	<string name="pleasewait">Please wait..</string>
+	<string name="dontupdate">Later</string>
+	<string name="hasnewversion">There is a new version for update.</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:focusable="true" 
+	android:focusableInTouchMode="true">
+
+    <LinearLayout
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="center_vertical">
+		<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/MKIndex"
+	    	android:textSize="@dimen/TextSize"/>  
+      	<Spinner android:id="@+id/SPNER_MKIndex" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/TextSize"/>   
+		<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/WKIndex"
+	    	android:textSize="@dimen/TextSize"/>		
+      	<Spinner android:id="@+id/SPNER_WKIndex" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/TextSize"/>
+
+	</LinearLayout>   
+	
+
+   <RadioGroup 
+        android:id="@+id/RDG_EncAlg" 
+        android:orientation="horizontal"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">	        
+  	  		<RadioButton 
+   	  	    android:layout_width="wrap_content" 
+   	  	    android:layout_height="wrap_content" 
+   	  	    android:id="@+id/RD_DES" 
+   	  	    android:textSize="@dimen/TextSize"
+   	  	    android:text="@string/DES"/>
+		<RadioButton 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/RD_3DES" 	 
+    	  	    android:checked="true"
+    	  	    android:textSize="@dimen/TextSize"
+				android:text="@string/TDES"/> 
+	</RadioGroup>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:orientation="vertical"> 
+	   	<TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="12sp"
+	    	android:background="#000000"/>
+	   	<TextView
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="12sp"
+	    	android:background="#FFFFFF"/>
+	</LinearLayout>
+	
+	
+	<LinearLayout    
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >	
+    	<Button
+    	    android:id="@+id/BT_Encrypt"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/Enc"/>
+    	<Button
+    	    android:id="@+id/BT_Decrypt"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/Dec"/>
+   	</LinearLayout>
+ 	<LinearLayout
+ 	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	<EditText
+    	    android:id="@+id/ED_EncOri"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/EncInit"
+	    	android:background="#33FF00"
+	    	android:gravity="top"
+	    	android:hint = "@string/EncData"/>
+    	<TextView
+    	    android:id="@+id/TV_EncDes"
+    	    android:background="#FF3300"
+    	    android:gravity="top"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:hint="@string/EncResult"/>   
+ 	</LinearLayout>
+ 
+	<LinearLayout    
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+
+    	<Spinner android:id="@+id/SPNER_MACAlg" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/TextSize"/>  
+		<Button
+    	    android:id="@+id/BT_MAC"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/MAC"/>
+	</LinearLayout>
+	
+	<LinearLayout
+ 	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	<EditText
+    	    android:id="@+id/ED_MacOri"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/MACInit"
+	    	android:background="#33FF00"
+	    	android:gravity="top"
+	    	android:hint = "@string/MacData"/>
+    	<TextView
+    	    android:id="@+id/TV_MacDes"
+    	    android:background="#FF3300"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="top"
+	    	android:hint="@string/MacResult"/>   
+ 	</LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:minHeight="10dp"
+	    android:orientation="horizontal"
+	    android:gravity="bottom">
+   		<TextView
+		    android:id="@+id/TV_Report5"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="12pt"
+		    android:background="#0000FF"
+		    android:textColor="#FF0000"
+		    android:text="" />
+	</LinearLayout>
+  <!-- -->  
+</LinearLayout>
